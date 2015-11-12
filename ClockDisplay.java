@@ -55,25 +55,5 @@ public class ClockDisplay
           minuto = minuto + 01;
       } 
       }    
-      /**
-         * Metodo que muestra la hora por pantalla
-         */
-        public String getTime ()
-          { 
-        String time = hora + ":" + minuto;
-          if (minuto < 10 & hora < 10){
-           time = ("0" + hora + " : "+ "0" + minuto);
-        }  else {
-              if (minuto < 10){
-                      time =( hora + " : "+ "0" + minuto);
-              }
-              if (hora < 10){
-                      time = ("0" + hora + " : "+  minuto);
-              }
-              if (minuto >= 10 & hora >= 10){
-                      time = ( hora + " : " + minuto);
-              }
-        }
-        return time;
-    }
+     
 }
